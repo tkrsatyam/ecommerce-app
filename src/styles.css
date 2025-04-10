@@ -5,3 +5,25 @@ body {
     margin-left: 5%;
     margin-right: 5%;
 }
+.common-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    color: darkolivegreen;
+}
+.form-input {
+    height: 35px;
+    margin-top: 2px;
+    margin-bottom: 12px;
+    border: 1px solid darkolivegreen;
+    padding-left: 15px;
+    /* color: darkolivegreen; */
+}
+.form-button {
+    margin-top: 25px;
+    height: 35px;
+    border: 1px solid darkolivegreen;
+    color: darkolivegreen;
+    cursor: pointer;
+}

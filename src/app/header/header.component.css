@@ -1,0 +1,41 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+h1 {
+    color: darkgreen;
+    margin: 0;
+    font-size: 40px;
+}
+.nav .nav-search {
+    display: flex;
+    flex: 1;
+    margin: 5px 5%;
+}
+.nav .nav-search input {
+    flex: 1;
+    color: darkgreen;
+    border: 1px solid darkgreen;
+    height: 40px;
+    border-right: none;
+}
+.nav .nav-search button {
+    color: darkgreen;
+    border: 1px solid darkgreen;
+    height: 44px;
+    padding: 0 5%;
+}
+.nav ul {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.nav ul li {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.nav ul a {
+    text-decoration: none;
+    color: darkgreen;
+}

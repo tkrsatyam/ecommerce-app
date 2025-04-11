@@ -1,5 +1,6 @@
 body {
     font-family: sans-serif;
+    background-color: #F1EFEC;
 }
 .container {
     margin-left: 5%;
@@ -10,20 +11,21 @@ body {
     flex-direction: column;
     width: 300px;
     margin: auto;
-    color: darkolivegreen;
+    color: #123458;
 }
 .form-input {
     height: 35px;
     margin-top: 2px;
     margin-bottom: 12px;
-    border: 1px solid darkolivegreen;
+    border: 1px solid #123458;
     padding-left: 15px;
-    /* color: darkolivegreen; */
+    /* color: #123458; */
 }
 .form-button {
     margin-top: 25px;
     height: 35px;
-    border: 1px solid darkolivegreen;
-    color: darkolivegreen;
+    border: 1px solid #123458;
+    color: white;
+    background-color: #123458;
     cursor: pointer;
 }

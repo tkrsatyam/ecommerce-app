@@ -1,0 +1,22 @@
+{
+  "seller": [
+    {
+      "id": "6706",
+      "name": "admin",
+      "email": "admin@admin.com",
+      "password": "admin123"
+    },
+    {
+      "id": "33dc",
+      "name": "satyam",
+      "email": "satyam@admin.com",
+      "password": "satyam123"
+    },
+    {
+      "id": "0e10",
+      "name": "milkbasket",
+      "email": "milkbasket@jio.com",
+      "password": "admin123"
+    }
+  ]
+}

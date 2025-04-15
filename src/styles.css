@@ -31,3 +31,8 @@ body {
     background-color: #123458;
     cursor: pointer;
 }
+
+.error-p {
+    color: red;
+    text-align: center
+}

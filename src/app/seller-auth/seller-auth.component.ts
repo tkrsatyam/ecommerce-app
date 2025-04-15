@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './seller-auth.component.css'
 })
 export class SellerAuthComponent implements OnInit {
-  showLogin = false
+  showSignUp = false
   authError: String = '';
   constructor(private seller: SellerService) { }
 
@@ -33,10 +33,10 @@ export class SellerAuthComponent implements OnInit {
   }
 
   openLogin() {
-    this.showLogin = true
+    this.showSignUp = false
   }
 
   openSignUp() {
-    this.showLogin = false
+    this.showSignUp = true
   }
 }

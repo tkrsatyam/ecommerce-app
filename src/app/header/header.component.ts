@@ -21,8 +21,6 @@ export class HeaderComponent implements OnInit {
           let seller = localStorage.getItem('seller');
           let sellerData =seller && JSON.parse(seller);
           this.sellerName = sellerData[0].name;
-          console.log(sellerData)
-          console.log(this.sellerName)
           this.menuType = 'seller'
         } else {
           this.menuType = 'default'

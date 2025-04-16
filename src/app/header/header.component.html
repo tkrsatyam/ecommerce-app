@@ -1,5 +1,6 @@
 <nav class="nav">
     <h1><a routerLink="">E-Comm</a></h1>
+    <!-- <img src="images/logo.png" routerLink=""> -->
     <div *ngIf="menuType==='default'" class="nav-search">
         <input type="text" placeholder="Search Product..">
         <button>Search</button>
@@ -12,9 +13,9 @@
             <li><a href="#">Cart(0)</a></li>
         </ul>
         <ul *ngSwitchCase="'seller'">
-            <li><a href="#" style="background-color: #D4C9BE; color: #123458;">Seller signed in as: {{sellerName | titlecase}}</a></li>
-            <li><a routerLink="seller-auth">Add Product</a></li>
-            <li><a routerLink="">List</a></li>
+            <li><a style="background-color: #D4C9BE; color: #123458;">Seller signed in as: {{sellerName | titlecase}}</a></li>
+            <li><a routerLink="seller-add-product">Add Product</a></li>
+            <li><a routerLink="seller-home">Seller Home</a></li>
             <li><a (click)="logout()">Logout</a></li>
         </ul>
     </div>

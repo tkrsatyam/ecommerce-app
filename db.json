@@ -27,7 +27,16 @@
       "category": "Mobile",
       "color": "Blue",
       "description": "Experience the future of mobile technology with the all-new iPhone 16. Designed for power, performance, and style, this stunning Blue variant blends sleek aesthetics with cutting-edge innovation. With an advanced chipset, enhanced camera system, and immersive display, the iPhone 16 ensures smooth multitasking, vibrant visuals, and crystal-clear photos and videos. Whether you're capturing memories or managing your day-to-day tasks, the iPhone 16 delivers it all with elegance and speed.",
-      "image": "/images/products/iphone-16/iphone-16-blue.png"
+      "image": "/images/products/apple/iphone-16-blue.png"
+    },
+    {
+      "id": "c769",
+      "name": "Samsung Galaxy S24",
+      "price": "68999",
+      "category": "Mobile",
+      "color": "Phantom Black",
+      "description": "Introducing the Samsung Galaxy S24 – a perfect fusion of performance and elegance. Wrapped in a sleek Phantom Black finish, this premium smartphone features a lightning-fast processor, pro-grade camera setup, and a brilliant AMOLED display. Whether you're gaming, streaming, or snapping high-resolution photos, the Galaxy S24 delivers an exceptional experience that keeps you ahead of the curve.",
+      "image": "/images/products/samsung/galaxy-s24.jpg"
     }
   ]
 }

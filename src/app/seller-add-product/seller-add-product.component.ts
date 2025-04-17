@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ProductService } from '../services/product.service';
+import { product } from '../data-type';
 
 @Component({
   selector: 'app-seller-add-product',
@@ -9,7 +11,20 @@ import { FormsModule } from '@angular/forms';
 })
 export class SellerAddProductComponent {
 
-  submit(data: object) {
-    console.log(data);
+addProductMessage: string | undefined;
+
+constructor (private product: ProductService) { }
+
+  submit(data: product) {
+    this.product.addProduct(data).subscribe((result) => {
+      console.log(result)
+      if(result) {
+        this.addProductMessage = "Product has been added successfully"
+      }
+    })
+
+    setTimeout(() => {
+      this.addProductMessage = undefined
+    }, 3000);
   }
 }

@@ -25,6 +25,6 @@ constructor (private product: ProductService) { }
 
     setTimeout(() => {
       this.addProductMessage = undefined
-    }, 3000);
+    }, 5000);
   }
 }

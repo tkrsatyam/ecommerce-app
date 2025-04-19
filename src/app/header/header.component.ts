@@ -12,12 +12,12 @@ export class HeaderComponent implements OnInit {
   menuType: string = 'default'
   sellerName: string = ''
 
-  constructor(private route: Router) { }
+  constructor(private readonly route: Router) { }
 
   ngOnInit(): void {
     this.route.events.subscribe((event: any) => {
       if (event instanceof NavigationEnd) {
-        if (localStorage.getItem('seller') && event.url.includes('seller')) {
+        if (typeof window !== 'undefined' && localStorage.getItem('seller') && event.url.includes('seller')) {
           let seller = localStorage.getItem('seller');
           let sellerData =seller && JSON.parse(seller);
           this.sellerName = sellerData[0].name;

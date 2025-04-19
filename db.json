@@ -37,6 +37,15 @@
       "color": "Phantom Black",
       "description": "Introducing the Samsung Galaxy S24 – a perfect fusion of performance and elegance. Wrapped in a sleek Phantom Black finish, this premium smartphone features a lightning-fast processor, pro-grade camera setup, and a brilliant AMOLED display. Whether you're gaming, streaming, or snapping high-resolution photos, the Galaxy S24 delivers an exceptional experience that keeps you ahead of the curve.",
       "image": "/images/products/samsung/galaxy-s24.jpg"
+    },
+    {
+      "id": "489f",
+      "name": "Dell XPS 15",
+      "price": "124999",
+      "category": "Laptop",
+      "color": "Platinum Silver",
+      "description": "Power meets precision with the Dell XPS 15, crafted for creators, professionals, and tech enthusiasts. Housed in a sleek Platinum Silver chassis, this laptop boasts a stunning 15.6-inch InfinityEdge display, powerful Intel Core processor, and ultra-fast SSD storage. Whether you're editing 4K videos or multitasking across intensive applications, the XPS 15 delivers seamless performance with style.",
+      "image": "/images/products/dell/xps-15.jpg"
     }
   ]
 }

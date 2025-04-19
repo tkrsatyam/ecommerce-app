@@ -11,8 +11,8 @@ import { CommonModule } from '@angular/common';
 })
 export class SellerAuthComponent implements OnInit {
   showSignUp = false
-  authError: String = '';
-  constructor(private seller: SellerService) { }
+  authError: string = '';
+  constructor(private readonly seller: SellerService) { }
 
   ngOnInit(): void {
     this.seller.reloadSeller()

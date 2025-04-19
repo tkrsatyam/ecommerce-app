@@ -19,12 +19,14 @@
                 <tr *ngFor="let item of productList">
                     <td><img src="{{item.image}}" alt="{{item.name}}"></td>
                     <td>{{item.name | titlecase}}</td>
-                    <td>{{item.price}}</td>
+                    <td>{{item.price | currency:'INR':'symbol':'1.0-0'}}</td>
                     <td>{{item.category | titlecase}}</td>
                     <td>{{item.color | titlecase}}</td>
                     <td>{{item.description}}</td>
-                    <td><fa-icon [icon]="deleteIcon" class="delete-icon" (click)="delete(item)"></fa-icon>
-                        </td>
+                    <td class="action-buttons">
+                        <a routerLink="/seller-update-product/{{item.id}}"><fa-icon [icon]="editIcon" class="edit-icon" title="Edit Product"></fa-icon></a>
+                        <fa-icon [icon]="deleteIcon" class="delete-icon" title="Delete Product" (click)="delete(item)"></fa-icon>
+                    </td>
                 </tr>
             </tbody>
         </table>

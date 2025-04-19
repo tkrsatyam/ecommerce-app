@@ -13,7 +13,7 @@ export class SellerAddProductComponent {
 
 addProductMessage: string | undefined;
 
-constructor (private product: ProductService) { }
+constructor (private readonly product: ProductService) { }
 
   submit(data: product) {
     this.product.addProduct(data).subscribe((result) => {

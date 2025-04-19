@@ -39,13 +39,40 @@
       "image": "/images/products/samsung/galaxy-s24.jpg"
     },
     {
-      "id": "489f",
       "name": "Dell XPS 15",
       "price": "124999",
       "category": "Laptop",
       "color": "Platinum Silver",
       "description": "Power meets precision with the Dell XPS 15, crafted for creators, professionals, and tech enthusiasts. Housed in a sleek Platinum Silver chassis, this laptop boasts a stunning 15.6-inch InfinityEdge display, powerful Intel Core processor, and ultra-fast SSD storage. Whether you're editing 4K videos or multitasking across intensive applications, the XPS 15 delivers seamless performance with style.",
-      "image": "/images/products/dell/xps-15.jpg"
+      "image": "/images/products/dell/xps-15.jpg",
+      "id": "489f"
+    },
+    {
+      "id": "d2f4",
+      "name": "Apple iPad Air (5th Gen)",
+      "price": "59999",
+      "category": "Tablet",
+      "color": "Starlight",
+      "description": "Experience power in a portable form with the Apple iPad Air (5th Gen). Featuring the blazing-fast M1 chip, a vibrant Liquid Retina display, and seamless Apple Pencil compatibility, it's the perfect device for both creativity and productivity on the go.",
+      "image": "/images/products/apple/ipad-air-5th-gen-starlight.png"
+    },
+    {
+      "id": "f80b",
+      "name": "Samsung Galaxy Watch 6",
+      "price": "32999",
+      "category": "Smartwatch",
+      "color": "Graphite",
+      "description": "Stay connected and track your health with the stylish Samsung Galaxy Watch 6. Equipped with advanced fitness tracking, heart monitoring, and a vibrant AMOLED display, this Graphite beauty keeps you informed and on the move all day long.",
+      "image": "/images/products/samsung/galaxy-watch-6.jpg"
+    },
+    {
+      "id": "a731",
+      "name": "Sony WH-1000XM5",
+      "price": "29999",
+      "category": "Headphones",
+      "color": "Midnight Black",
+      "description": "Immerse yourself in superior sound with the Sony WH-1000XM5 noise-canceling headphones. Featuring crystal-clear audio, adaptive sound control, and long-lasting battery life, these sleek Midnight Black headphones are perfect for travel, work, or pure relaxation.",
+      "image": "/images/products/sony/sony-wh-1000xm5.png"
     }
   ]
 }

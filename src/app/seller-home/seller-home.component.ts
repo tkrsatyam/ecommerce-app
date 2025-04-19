@@ -2,13 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../services/product.service';
 import { product } from '../data-type';
 import { CommonModule } from '@angular/common';
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faTrash, faEdit } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { RouterModule } from '@angular/router';
 
 
 @Component({
   selector: 'app-seller-home',
-  imports: [CommonModule, FontAwesomeModule],
+  imports: [CommonModule, FontAwesomeModule, RouterModule],
   templateUrl: './seller-home.component.html',
   styleUrl: './seller-home.component.css'
 })
@@ -17,6 +18,7 @@ export class SellerHomeComponent implements OnInit {
   productList: undefined | product[];
   productMessage: undefined | string;
   deleteIcon = faTrash;
+  editIcon = faEdit;
   constructor(private readonly product: ProductService) { }
 
   ngOnInit(): void {
@@ -24,21 +26,25 @@ export class SellerHomeComponent implements OnInit {
   }
 
   delete(product: product) {
-    this.product.deleteProduct(product.id).subscribe((result) => {
-      if (result) {
-        this.productMessage = "The product " + product.name + " has been deleted";
-        this.list();
-      }
-    })
-
-    setTimeout(() => {
-      this.productMessage = undefined
-    }, 5000);
+    const confirmed = window.confirm(`Are you sure you want to delete "${product.name}"?`);
+  
+    if (confirmed) {
+      this.product.deleteProduct(product.id).subscribe((result) => {
+        if (result) {
+          this.productMessage = `The product "${product.name}" has been deleted`;
+          this.list();
+        }
+      });
+  
+      setTimeout(() => {
+        this.productMessage = undefined;
+      }, 5000);
+    }
   }
+  
 
   list() {
     this.product.productList().subscribe((result) => {
-      console.log(result);
       if (result) {
         this.productList = result;
       }

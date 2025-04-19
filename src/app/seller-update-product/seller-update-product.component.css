@@ -1,0 +1,11 @@
+.common-form {
+    margin: 0% 30%;
+}
+.update-product {
+    padding: 50px;
+    padding-top: 0px;
+}
+.update-product h1 {
+    text-align: center;
+    color: #123458;
+}

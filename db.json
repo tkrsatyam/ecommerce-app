@@ -21,13 +21,13 @@
   ],
   "product": [
     {
-      "id": "83d1",
       "name": "iPhone 16",
       "price": "70999",
       "category": "Mobile",
       "color": "Blue",
       "description": "Experience the future of mobile technology with the all-new iPhone 16. Designed for power, performance, and style, this stunning Blue variant blends sleek aesthetics with cutting-edge innovation. With an advanced chipset, enhanced camera system, and immersive display, the iPhone 16 ensures smooth multitasking, vibrant visuals, and crystal-clear photos and videos. Whether you're capturing memories or managing your day-to-day tasks, the iPhone 16 delivers it all with elegance and speed.",
-      "image": "/images/products/apple/iphone-16-blue.png"
+      "image": "/images/products/apple/iphone-16-blue.png",
+      "id": "83d1"
     },
     {
       "id": "c769",

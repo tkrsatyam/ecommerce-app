@@ -35,4 +35,8 @@ export class ProductService {
       this.router.navigate(["/seller-home"]);
     }, 2000);
   }
+
+  showProducts() {
+
+  }
 }

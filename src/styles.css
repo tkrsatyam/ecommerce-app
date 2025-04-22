@@ -53,3 +53,24 @@ body {
     text-align: center;
     font-size: 16px;
 }
+
+.carousel-caption {
+    background-color: #00000052;
+    border-radius: 1px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 16px;
+    margin-bottom: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: #00000052;
+    border-radius: 2px;
+    margin: 5px;
+}

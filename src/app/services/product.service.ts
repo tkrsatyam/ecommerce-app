@@ -36,7 +36,11 @@ export class ProductService {
     }, 2000);
   }
 
-  showProducts() {
+  showPopularProducts() {
+    return this.http.get<product[]>('http://localhost:3000/product?_limit=4');
+  }
 
+  exploreProducts() {
+    return this.http.get<product[]>('http://localhost:3000/product?_limit=8');
   }
 }

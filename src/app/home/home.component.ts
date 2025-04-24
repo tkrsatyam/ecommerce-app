@@ -3,10 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProductService } from '../services/product.service';
 import { product } from '../data-type';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [NgbCarouselModule, CommonModule],
+  imports: [NgbCarouselModule, CommonModule, RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -20,7 +21,7 @@ export class HomeComponent implements OnInit {
         this.popularProduct = data;
       })
 
-      this.product.productList().subscribe((data) => {
+      this.product.exploreProducts().subscribe((data) => {
         this.productList = data;
       })
   }

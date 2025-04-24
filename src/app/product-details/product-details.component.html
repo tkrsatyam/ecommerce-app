@@ -1,0 +1,21 @@
+<div class="row product-details" *ngIf="productData">
+    <div class="col-sm-6">
+        <img class="product-img" [src]="productData.image" alt="{{productData.name}}">
+    </div>
+    <div class="col-sm-6">
+        <div class="details">
+            <h1>{{ productData.name }}</h1>
+            <h3 class="price">Price: ₹{{ productData.price }}</h3>
+            <h3 class="color">Color: <span [style.color]="productData.color">{{ productData.color }}</span></h3>
+            <h6 class="category">Category: {{ productData.category }}</h6>
+            <p class="description">{{ productData.description }}</p>
+            <button>Buy Now</button>
+            <button>Add To Cart</button>
+            <div class="quantity-group">
+                <button (click)="handleQty('subtract')">-</button>
+                <input type="text" value="{{productQty}}">
+                <button (click)="handleQty('add')">+</button>
+            </div>
+        </div>
+    </div>
+</div>

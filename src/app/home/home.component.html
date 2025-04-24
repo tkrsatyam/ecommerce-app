@@ -1,15 +1,16 @@
 <h1 class="home-title">Home Page</h1>
 <ngb-carousel *ngIf="popularProduct">
     <ng-template *ngFor="let item of popularProduct" ngbSlide>
-        <div class="picsum-img-wrapper">
-            <img class="carousel-image" [src]="item.image" alt="{{item.image}}" />
-        </div>
-        <div class="carousel-caption">
-            <h3>{{item.name}}</h3>
-            <p class="truncate-2">{{ item.description }}</p>
-        </div>
+        <a routerLink="details/{{item.id}}">
+            <div class="picsum-img-wrapper">
+                <img class="carousel-image" [src]="item.image" alt="{{item.image}}" />
+            </div>
+            <div class="carousel-caption">
+                <h3>{{item.name}}</h3>
+                <p class="truncate-2">{{ item.description }}</p>
+            </div>
+        </a>
     </ng-template>
-
 </ngb-carousel>
 
 <div class="product-list-wrapper">
@@ -23,12 +24,14 @@
                 <div class="product-details">
                     <h6 class="product-name">{{product.name}}</h6>
                     <h6 class="product-color">{{product.color}}</h6>
-                    <h6 class="product-price">{{product.price}}</h6>
+                    <h6 class="product-price">{{product.price | currency:'INR':'symbol':'1.0-0'}}</h6>
                 </div>
                 <div class="product-footer">
-                    <a href="" class="btn btn-outline-primary btn-sm">View Details</a>
-                    <a href="" class="btn btn-primary btn-sm">Add To Cart</a>
+                    <a routerLink="details/{{product.id}}"
+                        class="btn btn-outline-primary btn-sm custom-btn-outline">View Details</a>
+                    <a href="" class="btn btn-primary btn-sm custom-btn">Add To Cart</a>
                 </div>
+
             </div>
         </div>
     </div>

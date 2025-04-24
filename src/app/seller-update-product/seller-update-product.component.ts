@@ -40,6 +40,5 @@ export class SellerUpdateProductComponent implements OnInit {
       this.productMessage = undefined;
       this.product.redirectToList();
     }, 4000);
-    console.log(data)
   }
 }

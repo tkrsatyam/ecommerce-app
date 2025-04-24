@@ -73,6 +73,133 @@
       "color": "Midnight Black",
       "description": "Immerse yourself in superior sound with the Sony WH-1000XM5 noise-canceling headphones. Featuring crystal-clear audio, adaptive sound control, and long-lasting battery life, these sleek Midnight Black headphones are perfect for travel, work, or pure relaxation.",
       "image": "/images/products/sony/sony-wh-1000xm5.png"
+    },
+    {
+      "id": "896e",
+      "name": "LG 55\" OLED evo TV",
+      "price": "134999",
+      "category": "Television",
+      "color": "Black",
+      "description": "Enjoy a cinematic experience with LG’s 55-inch OLED evo TV, delivering deep blacks, vibrant colors, and Dolby Atmos sound.",
+      "image": ""
+    },
+    {
+      "id": "f563",
+      "name": "Bose SoundLink Revolve+ II",
+      "price": "24999",
+      "category": "Speaker",
+      "color": "Triple Black",
+      "description": "Portable, powerful, and immersive – Bose SoundLink Revolve+ II delivers 360° sound with water-resistance and 17-hour battery life.",
+      "image": ""
+    },
+    {
+      "id": "54fe",
+      "name": "OnePlus Pad",
+      "price": "37999",
+      "category": "Tablet",
+      "color": "Halo Green",
+      "description": "The OnePlus Pad offers high-speed performance with an 11.6-inch display and sleek Halo Green finish for work and play.",
+      "image": ""
+    },
+    {
+      "id": "3a09",
+      "name": "Mi Air Purifier 4",
+      "price": "12999",
+      "category": "Home Appliance",
+      "color": "White",
+      "description": "Keep your home fresh and clean with Mi Air Purifier 4, featuring smart sensors and high-efficiency particle filtration.",
+      "image": ""
+    },
+    {
+      "id": "2d93",
+      "name": "Fitbit Charge 6",
+      "price": "15999",
+      "category": "Fitness Tracker",
+      "color": "Coral",
+      "description": "Your all-day fitness companion, Fitbit Charge 6 offers GPS, heart rate tracking, and stress management features in a Coral band.",
+      "image": ""
+    },
+    {
+      "id": "7b4f",
+      "name": "Logitech MX Master 3S",
+      "price": "9999",
+      "category": "Accessories",
+      "color": "Graphite",
+      "description": "Elevate productivity with Logitech MX Master 3S – a precision wireless mouse with MagSpeed scrolling and ergonomic design.",
+      "image": ""
+    },
+    {
+      "id": "fe07",
+      "name": "Amazon Echo Dot (5th Gen)",
+      "price": "5499",
+      "category": "Smart Home",
+      "color": "Glacier White",
+      "description": "Smart speaker with Alexa – play music, control smart devices, and get information instantly with Echo Dot (5th Gen).",
+      "image": ""
+    },
+    {
+      "id": "75e2",
+      "name": "KitchenAid Artisan Mixer",
+      "price": "49999",
+      "category": "Kitchen Appliance",
+      "color": "Empire Red",
+      "description": "Bake like a pro with the KitchenAid Artisan stand mixer. A powerful motor and sleek Empire Red finish add charm to any kitchen.",
+      "image": ""
+    },
+    {
+      "id": "8458",
+      "name": "ASUS ROG Strix G17",
+      "price": "139999",
+      "category": "Laptop",
+      "color": "Eclipse Gray",
+      "description": "Unleash your gaming potential with the ASUS ROG Strix G17 featuring Ryzen 9 CPU, RTX graphics, and high-refresh display.",
+      "image": ""
+    },
+    {
+      "id": "181c",
+      "name": "Nikon Z30 Vlogger Kit",
+      "price": "77499",
+      "category": "Camera",
+      "color": "Black",
+      "description": "A compact mirrorless camera designed for creators – the Nikon Z30 vlogger kit includes tripod, mic, and a high-quality sensor.",
+      "image": ""
+    },
+    {
+      "id": "7d6d",
+      "name": "Samsung 1TB T7 SSD",
+      "price": "8999",
+      "category": "Storage",
+      "color": "Titan Gray",
+      "description": "Blazing-fast and ultra-portable – the Samsung T7 external SSD offers 1TB of reliable storage in a rugged, compact form.",
+      "image": ""
+    },
+    {
+      "id": "017b",
+      "name": "Beats Studio Buds",
+      "price": "14999",
+      "category": "Earbuds",
+      "color": "White",
+      "description": "Enjoy rich sound and ANC in a sleek design with Beats Studio Buds – true wireless earbuds for everyday listening.",
+      "image": ""
+    },
+    {
+      "id": "1379",
+      "name": "Philips Hue Lightstrip Plus",
+      "price": "7999",
+      "category": "Lighting",
+      "color": "Multicolor",
+      "description": "Bring color to your space with Philips Hue Lightstrip Plus – flexible, voice-controlled LED lighting with smart features.",
+      "image": ""
+    }
+  ],
+  "test": [
+    {
+      "id": 1,
+      "name": "Samsung Phone"
+    },
+    {
+      "id": 2,
+      "name": "iPhone"
     }
   ]
 }

@@ -19,7 +19,6 @@ export class SellerAuthComponent implements OnInit {
   }
 
   signUp(data: NgForm): void {
-    console.warn(data.value)
     this.seller.userSignUp(data.value)
   }
 

@@ -192,14 +192,12 @@
       "image": ""
     }
   ],
-  "test": [
+  "user": [
     {
-      "id": 1,
-      "name": "Samsung Phone"
-    },
-    {
-      "id": 2,
-      "name": "iPhone"
+      "id": "1f31",
+      "name": "User 1",
+      "email": "user1@gmail.com",
+      "password": "user1"
     }
   ]
 }

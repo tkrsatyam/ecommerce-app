@@ -19,11 +19,11 @@ export class SellerAuthComponent implements OnInit {
   }
 
   signUp(data: NgForm): void {
-    this.seller.userSignUp(data.value)
+    this.seller.sellerSignUp(data.value)
   }
 
   login(data: NgForm): void {
-    this.seller.userLogin(data.value)
+    this.seller.sellerLogin(data.value)
     this.seller.isLoginError.subscribe((isError) => {
       if(isError) {
         this.authError = 'Email or password is not correct. Please try again.'

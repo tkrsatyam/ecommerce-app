@@ -2,10 +2,22 @@
     <div *ngIf="showSignUp" class="sign-up">
         <h2>User Signup</h2>
         <form #userSignUp="ngForm" (ngSubmit)="signUp(userSignUp.value)" class="common-form">
-            Name<input type="text" class="form-input" placeholder="Enter name" name="name" ngModel>
-            Email<input type="text" class="form-input" placeholder="Enter email" name="email" ngModel>
-            Password<input type="text" class="form-input" placeholder="Enter password" name="password" ngModel>
-            <button class="form-button">Sign Up</button>
+            Name<input type="text" class="form-input" placeholder="Enter name" name="name" ngModel #name="ngModel"
+                minlength="2" maxlength="30" required pattern="^[A-Za-z]+(?: [A-Za-z]+)*$">
+            <p><span *ngIf="name.invalid && name.touched">Please enter a valid name (letters only, no special characters
+                    or numbers)</span></p>
+            Email<input type="text" class="form-input" placeholder="Enter email" name="email" ngModel email
+                #email="ngModel" required>
+            <p><span *ngIf="email.invalid && email.touched">Please enter valid email</span></p>
+            Password
+            <div class="password-wrapper">
+                <input [type]="showPassword ? 'text' : 'password'" class="form-input" placeholder="Enter password"
+                    name="password" ngModel minlength="2" maxlength="20" #password="ngModel" required>
+                <fa-icon [icon]="showPassword ? eyeSlash : eye" (click)="showPassword = !showPassword"
+                    class="eye-icon"></fa-icon>
+            </div>
+            <p><span *ngIf="password.invalid && password.touched">Please enter valid password</span></p>
+            <button [disabled]="userSignUp.invalid" class="form-button">Sign Up</button>
             <a class="auth-toggle" (click)="openLogin()">Already have account? Click here to Login</a>
         </form>
     </div>
@@ -14,9 +26,18 @@
         <h2>User Login</h2>
         <p class="error-p">{{authError}}</p>
         <form #userLogin="ngForm" (ngSubmit)="login(userLogin.value)" class="common-form">
-            Email<input type="text" class="form-input" placeholder="Enter email" name="email" ngModel>
-            Password<input type="text" class="form-input" placeholder="Enter password" name="password" ngModel>
-            <button class="form-button">Login</button>
+            Email<input type="email" class="form-input" placeholder="Enter email" name="email" ngModel email
+                #email="ngModel" required>
+            <p><span *ngIf="email.invalid && email.touched">Please enter valid email</span></p>
+            Password
+            <div class="password-wrapper">
+                <input [type]="showLoginPassword ? 'text' : 'password'" class="form-input" placeholder="Enter password"
+                    name="password" ngModel minlength="2" maxlength="20" #password="ngModel" required>
+                <fa-icon [icon]="showLoginPassword ? eyeSlash : eye" (click)="showLoginPassword = !showLoginPassword"
+                    class="eye-icon"></fa-icon>
+            </div>
+            <p><span *ngIf="password.invalid && password.touched">Please enter valid password</span></p>
+            <button [disabled]="userLogin.invalid" class="form-button">Login</button>
             <a class="auth-toggle" (click)="openSignUp()">Don't have an account? Click here to Sign up</a>
         </form>
     </div>

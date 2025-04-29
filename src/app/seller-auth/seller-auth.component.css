@@ -22,3 +22,37 @@
     text-align: center;
     cursor: pointer;
 }
+
+.sign-up p span,
+.login p span {
+    color: #b00020;
+    font-size: 13px;
+    display: block;
+    margin-top: -10px;
+    text-align: left;
+}
+
+.sign-up p,
+.login p {
+    margin-bottom: 0;
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper .form-input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    cursor: pointer;
+    color: #123458;
+    font-size: 12px;
+}

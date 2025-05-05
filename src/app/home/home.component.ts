@@ -14,15 +14,33 @@ import { RouterModule } from '@angular/router';
 export class HomeComponent implements OnInit {
   popularProduct: undefined | product[];
   productList: undefined | product[];
+  productData: undefined | product;
+
   constructor(private product: ProductService) { }
 
   ngOnInit(): void {
-      this.product.showPopularProducts().subscribe((data) => {
-        this.popularProduct = data;
-      })
+    this.product.showPopularProducts().subscribe((data) => {
+      this.popularProduct = data;
+    })
 
-      this.product.exploreProducts().subscribe((data) => {
-        this.productList = data;
-      })
+    this.product.exploreProducts().subscribe((data) => {
+      this.productList = data;
+    })
+  }
+
+  addToCart(productId: number) {
+    let id = String(productId)
+    this.product.getProduct(id).subscribe((data) => {
+      this.productData = data;
+    })
+
+    console.log(this.productData)
+    if (this.productData) {
+      this.productData.cartQty = 1;
+      if (!localStorage.getItem('user')) {
+
+        this.product.localAddToCart(this.productData);
+      }
+    }
   }
 }

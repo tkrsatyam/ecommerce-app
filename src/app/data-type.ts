@@ -16,5 +16,6 @@ export interface product {
     category: string,
     color: string,
     image: string,
-    description: string
+    description: string,
+    cartQty: undefined | number
 }

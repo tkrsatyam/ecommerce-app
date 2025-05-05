@@ -10,7 +10,7 @@
             <h6 class="category">Category: {{ productData.category }}</h6>
             <p class="description">{{ productData.description }}</p>
             <button>Buy Now</button>
-            <button>Add To Cart</button>
+            <button (click)="addToCart()">Add To Cart</button>
             <div class="quantity-group">
                 <button (click)="handleQty('subtract')">-</button>
                 <input type="text" value="{{productQty}}">

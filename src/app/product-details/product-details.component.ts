@@ -17,7 +17,7 @@ export class ProductDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     let productId = this.activeRoute.snapshot.paramMap.get('productId');
-    if(productId) {
+    if (productId) {
       this.productService.getProduct(productId).subscribe((data) => {
         this.productData = data;
       })
@@ -25,10 +25,19 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   handleQty(val: string) {
-    if(this.productQty < 20 && val === 'add') {
+    if (this.productQty < 20 && val === 'add') {
       this.productQty += 1;
-    } else if(this.productQty > 1 && val === 'subtract') {
+    } else if (this.productQty > 1 && val === 'subtract') {
       this.productQty -= 1;
+    }
+  }
+
+  addToCart() {
+    if (this.productData) {
+      this.productData.cartQty = this.productQty;
+      if (!localStorage.getItem('user')) {
+        this.productService.localAddToCart(this.productData);
+      }
     }
   }
 }
